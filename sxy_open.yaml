@@ -1,0 +1,308 @@
+# yaml_data[0]小微商户进件
+-
+  url: https://sit-open.moneypots.cn/oapi/merchant/add
+  headers: {"Content-Type":"application/json"}
+  data: {
+    "merchantNo": "310410158049125",
+    "notifyUrl": "http://10.10.51.165:10021/xsopen/merchant/notify",
+    "merchantCategory": "T",
+    "legalMobile": "18595455023",
+    "legalName": "朱浩然",
+    "legalCertNo": "412723200003145537",
+    "certFrontUrl": "https://sit-pay.moneypots.cn/images/group1/M00/00/03/wKgfemNyFk6AYmVZAAdu6YHiugg690.jpg",
+    "certBackUrl": "https://sit-pay.moneypots.cn/images/group1/M00/00/03/wKgfemNyFhqADGLSAAnmaBLdOcg077.jpg",
+    "certAddress": "商水",
+    "certStartTime": "2017-08-25",
+    "certEndTime": "2027-08-25",
+    "provinceCode": "310000",
+    "cityCode": "310100",
+    "districtCode": "310118",
+    "bankCardNo": "6214832638019328",
+    "bankReserveMobile": "18595455023",
+    "bankAccountType": "BU",
+    "bankAccountName": "朱浩然",
+    "bankName": "招商银行",
+    "branchName": "招商银行新天地支行",
+    "bankNo": "7200",
+    "branchNo": "7201",
+    "bankCardUrl": "https://sit-pay.moneypots.cn/images/group1/M00/00/03/wKgfemNyFryADTwCAAY2XA-TejE362.jpg",
+    "merchantName": "商户_朱浩然",
+    "merchantShortName": "商户简称",
+    "merchantAddress": "商户地址",
+    "legalEmail": "123@123.com",
+    "easePayRate": "0.45",
+    "easePayWithdrawRate": "0.5",
+    "interiorPicUrl1": "https://sit-pay.moneypots.cn/images/group1/M00/00/02/wKgfemNuDO6ACyD9AACsWoEJwik333.jpg",
+    "interiorPicUrl2": "https://sit-pay.moneypots.cn/images/group1/M00/00/02/wKgfemNuDO6ACyD9AACsWoEJwik333.jpg",
+    "boardPicUrl": "https://sit-pay.moneypots.cn/images/group1/M00/00/02/wKgfemNuDO6ACyD9AACsWoEJwik333.jpg",
+    "legalHeadUrl": "https://sit-pay.moneypots.cn/images/group1/M00/00/02/wKgfemNuDO6ACyD9AACsWoEJwik333.jpg",
+    "cashierPicUrl": "https://sit-pay.moneypots.cn/images/group1/M00/00/02/wKgfemNuDO6ACyD9AACsWoEJwik333.jpg",
+    "businessAddressProvince":"410000",
+    "contactEmail":"123@123.com",
+    "businessAddress":"1234",
+    "contactName":"朱浩然",
+    "mccCode": "INTERNAL_TESTING_01",
+    "businessAddressCity":"411600",
+    "contactPhone":"16600000000",
+    "businessAddressArea":"411623",
+    "profession":"11"
+}
+
+
+# yaml_data[1]商户修改结算卡
+-
+  url: https://sit-open.moneypots.cn/oapi/merchant/modify/settle
+  headers: {"Content-Type":"application/json"}
+  data: {"requestNo":"202211161537",
+         "merchantCode":"OP2211141010284",
+         "bankCardNo": "6214832638019328",
+         "bankReserveMobile": "18595455023",
+         "bankAccountType": "BU",
+         "bankAccountName": "朱浩然",
+         "bankName": "招商银行股份有限公司",
+#         "branchName": "招商银行上海新天地支行",
+         "bankNo": "308584001024",
+         "branchNo": "7201",
+         "provinceCode": "310000",
+         "cityCode": "310100",
+         "bankCardUrl": "https://sit-open.5ubp.com/images/group1/M00/00/0A/wKgfemOIRKuAfa0nAAY2XA-TejE073.jpg"}
+
+# yaml_data[2]商户信息查询
+-
+  url: https://sit-open.moneypots.cn/oapi/merchant/query
+  headers: {"Content-Type":"application/json"}
+  data: {"merchantNo":"899146349"}
+
+# yaml_data[3]商户修改基础信息
+-
+  url: https://sit-open.moneypots.cn/oapi/merchant/modify/rate
+  headers: {"Content-Type":"application/json"}
+  data: {"requestNo":"202211071534",
+         "merchantCode":"OP2209241009951",
+         "merchantShortName": "朱浩然",
+          'cashierPicUrl': 'https://test.uenpay.com/image/uenpay/M00/6F/B5/CgoVYGNPsoGARvzEAAKsv0rSSPM628.png',
+          'gsxtPicUrl': 'https://test.uenpay.com/image/uenpay/M00/2F/16/CgoVYGM0ExSAN7rLAAGdKnO_UBQ111.png',
+          'boardPicUrl': 'https://test.uenpay.com/image/uenpay/M00/6F/B5/CgoVYGNPsoGARvzEAAKsv0rSSPM628.png',
+          'interiorPicUrl1': 'https://test.uenpay.com/image/uenpay/M00/6F/B5/CgoVYGNPsoGARvzEAAKsv0rSSPM628.png',
+          'interiorPicUrl2': 'https://test.uenpay.com/image/uenpay/M00/6F/B5/CgoVYGNPsoGARvzEAAKsv0rSSPM628.png'}
+
+#yaml_data[4]修改商户费率
+-
+  url: https://sit-open.moneypots.cn/oapi/merchant/query
+  headers: {"Content-Type":"application/json"}
+  data: {"merchantCode":"OP2211141010284",
+         "requestNo": "202211071554",
+         "productCode": "XS_APP_PAY",
+         "notifyUrl": "https://test.uenpay.com/image/uenpay/M00/6F/B5/CgoVYGNPsoGARvzEAAKsv0rSSPM628.png",
+         "rate": "0.39"}
+
+#yaml_data[5]查询商户余额
+-
+  url: https://sit-open.moneypots.cn/oapi/merchant/mercQueryBalance
+  headers: {"Content-Type":"application/json"}
+  data: {"merchantCode":"OP2211141010270"}
+
+#yaml_data[6]商户余额提现
+-
+  url: https://sit-open.moneypots.cn/oapi/merchant/draw
+  headers: {"Content-Type":"application/json"}
+  data: {"merchantCode":"OP2209241009951",
+         "outDrawNo": "202211071552",
+         "drawAmount": "100",
+         "notifyUrl": "https://test.uenpay.com/image/uenpay/M00/6F/B5/CgoVYGNPsoGARvzEAAKsv0rSSPM628.png"}
+
+# yaml_data[7]个体商户对私卡进件
+-
+  url: https://sit-open.moneypots.cn/oapi/merchant/add
+  headers: {"Content-Type":"application/json"}
+  data: {
+    "merchantNo": "310410198330099",
+    "notifyUrl": "http://10.10.51.165:10021/xsopen/merchant/notify",
+    "merchantCategory": "P",
+    "legalMobile": "18657942291",
+    "legalName": "邢振初",
+    "legalCertNo": "330721198704217519",
+    "certFrontUrl": "https://sit-open.5ubp.com/images/group1/M00/00/09/wKgfemOGyXeAIYc0AAjH0JiUcjQ629.jpg",
+    "certBackUrl": "https://sit-open.5ubp.com/images/group1/M00/00/09/wKgfemOGyb6AATygAAh9PGkYYGQ418.jpg",
+    "certAddress": "徐汇",
+    "certStartTime": "2016-12-12",
+    "certEndTime": "2036-12-12",
+    "provinceCode": "330000",
+    "cityCode": "330700",
+    "districtCode": "310118",
+    "bankCardNo": "6224490106111743",
+    "bankReserveMobile": "18657942291",
+    "bankAccountType": "BU",
+    "bankAccountName": "邢振初",
+    "bankName": "中国建设银行股份有限公司",
+    "branchName": "上海曹安路支行",
+    "bankNo": "7200",
+    "branchNo": "7201",
+    "bankCardUrl": "https://sit-open.5ubp.com/images/group1/M00/00/09/wKgfemOGzDqAJVWkAAUYeMV0FVo008.jpg",
+    "merchantName": "商户_邢振初",
+    "merchantShortName": "商户简称",
+    "merchantAddress": "商户地址",
+    "legalEmail": "123@123.com",
+    "easePayRate": "0.45",
+    "easePayWithdrawRate": "0.5",
+    "interiorPicUrl1": "https://sit-open.5ubp.com/images/group1/M00/00/09/wKgfemOGzJSALzgwAAIjWRKBUEo384.jpg",
+    "interiorPicUrl2": "https://sit-open.5ubp.com/images/group1/M00/00/09/wKgfemOGzJSALzgwAAIjWRKBUEo384.jpg",
+    "boardPicUrl": "https://sit-open.5ubp.com/images/group1/M00/00/09/wKgfemOGzJSALzgwAAIjWRKBUEo384.jpg",
+    "legalHeadUrl": "https://sit-open.5ubp.com/images/group1/M00/00/09/wKgfemOGzJSALzgwAAIjWRKBUEo384.jpg",
+    "cashierPicUrl": "https://sit-open.5ubp.com/images/group1/M00/00/09/wKgfemOGzJSALzgwAAIjWRKBUEo384.jpg",
+    "contactEmail":"123@123.com",
+    "businessAddress":"上海市嘉定区真南路4268号2幢JT11212室",
+    "contactName":"邢振初",
+    "mccCode": "INTERNAL_TESTING_01",
+    "businessAddressCity":"310100",
+    "businessAddressProvince":"310000",
+    "businessAddressArea":"310114",
+    "contactPhone":"18657942291",
+    "busLicNo": "91310112MA1GCGAB67",
+    "busLicName": "上海竹段网络科技",
+    "busLicStartTime": "2019-06-04",
+    "busLicEndTime": "2049-06-03",
+    "busLicPicUrl": "https://sit-open.5ubp.com/images/group1/M00/00/09/wKgfemOGzJSALzgwAAIjWRKBUEo384.jpg",
+    "gsxtPicUrl": "https://sit-open.5ubp.com/images/group1/M00/00/09/wKgfemOGzJSALzgwAAIjWRKBUEo384.jpg",
+    "sellingArea": "B",
+    "staffSize": "B",
+    "openAccountPath": "https://sit-open.5ubp.com/images/group1/M00/00/09/wKgfemOGzJSALzgwAAIjWRKBUEo384.jpg",
+    "appPath": "https://sit-open.5ubp.com/images/group1/M00/00/09/wKgfemOGzJSALzgwAAIjWRKBUEo384.jpg"
+}
+
+# yaml_data[8]企业商户进件(不支持对私）---法人不为受益人
+-
+  url: https://sit-open.moneypots.cn/oapi/merchant/add
+  headers: {"Content-Type":"application/json"}
+  data: {
+    "merchantNo": "310410158140009",
+    "notifyUrl": "http://10.10.51.165:10021/xsopen/merchant/notify",
+    "merchantCategory": "E",
+    "legalMobile": "18657942291",
+    "legalName": "邢振初",
+    "legalCertNo": "330721198704217519",
+    "certFrontUrl": "https://sit-pay.moneypots.cn/images/group1/M00/00/03/wKgfemNyKEiAKM5SAAjH0JiUcjQ939.jpg",
+    "certBackUrl": "https://sit-pay.moneypots.cn/images/group1/M00/00/03/wKgfemNyKHGAEYsLAAh9PGkYYGQ421.jpg",
+    "certAddress": "徐汇",
+    "certStartTime": "2016-12-12",
+    "certEndTime": "2036-12-12",
+    "provinceCode": "330000",
+    "cityCode": "330700",
+    "districtCode": "310118",
+    "bankCardNo": "1001294809300051977",
+    "bankReserveMobile": "18657942291",
+    "bankAccountType": "BC",
+    "bankAccountName": "上海竹段网络科技有限公司",
+    "bankName": "中国工商银行股份有限公司",
+    "branchName": "工行漕河泾桂林路支行",
+    "bankNo": "7200",
+    "branchNo": "7201",
+    "bankCardUrl": "https://sit-pay.moneypots.cn/images/group1/M00/00/03/wKgfemNyJ5qAB_E7AAUYeMV0FVo010.jpg",
+    "merchantName": "上海竹段网络科技有限公司",
+    "merchantShortName": "商户简称",
+    "merchantAddress": "商户地址",
+    "legalEmail": "123@123.com",
+    "easePayRate": "0.45",
+    "easePayWithdrawRate": "0.5",
+    "interiorPicUrl1": "https://sit-pay.moneypots.cn/images/group1/M00/00/02/wKgfemNuDO6ACyD9AACsWoEJwik333.jpg",
+    "interiorPicUrl2": "https://sit-pay.moneypots.cn/images/group1/M00/00/02/wKgfemNuDO6ACyD9AACsWoEJwik333.jpg",
+    "boardPicUrl": "https://sit-pay.moneypots.cn/images/group1/M00/00/02/wKgfemNuDO6ACyD9AACsWoEJwik333.jpg",
+    "legalHeadUrl": "https://sit-pay.moneypots.cn/images/group1/M00/00/02/wKgfemNuDO6ACyD9AACsWoEJwik333.jpg",
+    "cashierPicUrl": "https://sit-pay.moneypots.cn/images/group1/M00/00/02/wKgfemNuDO6ACyD9AACsWoEJwik333.jpg",
+    "businessAddressProvince":"310000",
+    "contactEmail":"123@123.com",
+    "businessAddress":"1234",
+    "contactName":"邢振初",
+    "mccCode": "INTERNAL_TESTING_01",
+    "businessAddressCity":"310100",
+    "contactPhone":"18657942291",
+    "businessAddressArea":"310113",
+    "busLicNo": "91310112MA1GCGAB67",
+    "busLicName": "上海竹段网络科技有限公司",
+    "busLicStartTime": "2019-06-04",
+    "busLicEndTime": "2049-06-03",
+    "busLicPicUrl": "https://sit-pay.moneypots.cn/images/group1/M00/00/03/wKgfemNzBN6AExatAAIjWRKBUEo501.jpg",
+    "gsxtPicUrl": "https://sit-pay.moneypots.cn/images/group1/M00/00/03/wKgfemNzBN6AExatAAIjWRKBUEo501.jpg",
+    "sellingArea": "B",
+    "staffSize": "B",
+    "openAccountPath": "https://sit-pay.moneypots.cn/images/group1/M00/00/03/wKgfemNzBN6AExatAAIjWRKBUEo501.jpg",
+    "appPath": "https://sit-pay.moneypots.cn/images/group1/M00/00/02/wKgfemNuDO6ACyD9AACsWoEJwik333.jpg",
+    "beneficiaryName": "朱浩然",
+    "beneficiaryIdCard": "4127232000031455337",
+    "beneficiaryIdCardStartTime": "2017-08-25",
+    "beneficiaryIdCardEndTime": "2027-08-25",
+    "beneficiaryIdCardAddress": "河南省商水县化河乡大庄村三组",
+    "beneficiaryPhone": "18595455023",
+    "beneficiaryIdCardPath": "https://sit-pay.moneypots.cn/images/group1/M00/00/02/wKgfemNuDR2AGx8VAAmMJ0aULnQ794.jpg",
+    "beneficiaryIdCardReversePath": "https://sit-pay.moneypots.cn/images/group1/M00/00/02/wKgfemNuDR-AEY3oAAMOnq8OA0w237.jpg",
+    "equityRatio": "32.12"
+}
+
+# yaml_data[9]企业商户进件(不支持对私）---法人是受益人
+-
+  url: https://sit-open.moneypots.cn/oapi/merchant/add
+  headers: {"Content-Type":"application/json"}
+  data: {
+    "merchantNo": "310410158240024",
+    "notifyUrl": "http://10.10.51.165:10021/xsopen/merchant/notify",
+    "merchantCategory": "E",
+    "legalMobile": "18657942291",
+    "legalName": "邢振初",
+    "legalCertNo": "330721198704217519",
+    "certFrontUrl": "https://sit-pay.moneypots.cn/images/group1/M00/00/03/wKgfemNyKEiAKM5SAAjH0JiUcjQ939.jpg",
+    "certBackUrl": "https://sit-pay.moneypots.cn/images/group1/M00/00/03/wKgfemNyKHGAEYsLAAh9PGkYYGQ421.jpg",
+    "certAddress": "徐汇",
+    "certStartTime": "2016-12-12",
+    "certEndTime": "2036-12-12",
+    "provinceCode": "330000",
+    "cityCode": "330700",
+    "districtCode": "310118",
+    "bankCardNo": "1001294809300051977",
+    "bankReserveMobile": "18657942291",
+    "bankAccountType": "BC",
+    "bankAccountName": "上海竹段网络科技有限公司",
+    "bankName": "中国工商银行股份有限公司",
+    "branchName": "工行漕河泾桂林路支行",
+    "bankNo": "7200",
+    "branchNo": "7201",
+    "bankCardUrl": "https://sit-pay.moneypots.cn/images/group1/M00/00/03/wKgfemNyJ5qAB_E7AAUYeMV0FVo010.jpg",
+    "merchantName": "上海竹段网络科技有限公司",
+    "merchantShortName": "商户简称",
+    "merchantAddress": "商户地址",
+    "legalEmail": "123@123.com",
+    "easePayRate": "0.45",
+    "easePayWithdrawRate": "0.5",
+    "interiorPicUrl1": "https://sit-pay.moneypots.cn/images/group1/M00/00/02/wKgfemNuDO6ACyD9AACsWoEJwik333.jpg",
+    "interiorPicUrl2": "https://sit-pay.moneypots.cn/images/group1/M00/00/02/wKgfemNuDO6ACyD9AACsWoEJwik333.jpg",
+    "boardPicUrl": "https://sit-pay.moneypots.cn/images/group1/M00/00/02/wKgfemNuDO6ACyD9AACsWoEJwik333.jpg",
+    "legalHeadUrl": "https://sit-pay.moneypots.cn/images/group1/M00/00/02/wKgfemNuDO6ACyD9AACsWoEJwik333.jpg",
+    "cashierPicUrl": "https://sit-pay.moneypots.cn/images/group1/M00/00/02/wKgfemNuDO6ACyD9AACsWoEJwik333.jpg",
+    "businessAddressProvince":"310000",
+    "contactEmail":"123@123.com",
+    "businessAddress":"1234",
+    "contactName":"邢振初",
+    "mccCode": "INTERNAL_TESTING_01",
+    "businessAddressCity":"310100",
+    "contactPhone":"18657942291",
+    "businessAddressArea":"310113",
+    "busLicNo": "91310112MA1GCGAB67",
+    "busLicName": "上海竹段网络科技有限公司",
+    "busLicStartTime": "2019-06-04",
+    "busLicEndTime": "2049-06-03",
+    "busLicPicUrl": "https://sit-pay.moneypots.cn/images/group1/M00/00/03/wKgfemNzBN6AExatAAIjWRKBUEo501.jpg",
+    "gsxtPicUrl": "https://sit-pay.moneypots.cn/images/group1/M00/00/03/wKgfemNzBN6AExatAAIjWRKBUEo501.jpg",
+    "sellingArea": "B",
+    "staffSize": "B",
+    "openAccountPath": "https://sit-pay.moneypots.cn/images/group1/M00/00/03/wKgfemNzBN6AExatAAIjWRKBUEo501.jpg",
+    "appPath": "https://sit-pay.moneypots.cn/images/group1/M00/00/02/wKgfemNuDO6ACyD9AACsWoEJwik333.jpg",
+    "beneficiaryName": "邢振初",
+    "beneficiaryIdCard": "330721198704217519",
+    "beneficiaryIdCardStartTime": "2016-12-12",
+    "beneficiaryIdCardEndTime": "2036-12-12",
+    "beneficiaryIdCardAddress": "徐汇",
+    "beneficiaryPhone": "18657942291",
+    "beneficiaryIdCardPath": "https://sit-pay.moneypots.cn/images/group1/M00/00/03/wKgfemNyKEiAKM5SAAjH0JiUcjQ939.jpg",
+    "beneficiaryIdCardReversePath": "https://sit-pay.moneypots.cn/images/group1/M00/00/03/wKgfemNyKHGAEYsLAAh9PGkYYGQ421.jpg",
+    "equityRatio": "32.12"
+}
+
