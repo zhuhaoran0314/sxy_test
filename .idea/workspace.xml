@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e3fa1fb1-ef2c-4a7f-8448-b24c1f1dbedc" name="Changes" comment="测试新增文件">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="e3fa1fb1-ef2c-4a7f-8448-b24c1f1dbedc" name="Changes" comment="竞彩足球比分游戏" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -276,7 +274,21 @@
       <option name="project" value="LOCAL" />
       <updated>1670298614218</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="竞彩足球比分游戏">
+      <created>1671176608386</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1671176608386</updated>
+    </task>
+    <task id="LOCAL-00003" summary="竞彩足球比分游戏">
+      <created>1671176674671</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1671176674671</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -292,6 +304,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="测试新增文件" />
-    <option name="LAST_COMMIT_MESSAGE" value="测试新增文件" />
+    <MESSAGE value="竞彩足球比分游戏" />
+    <option name="LAST_COMMIT_MESSAGE" value="竞彩足球比分游戏" />
   </component>
 </project>
